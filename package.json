@@ -3,10 +3,17 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "type": "module",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node src/app.js",
+        "test-sample": "node src/app.js -s /res/sample_submissions/submission-1 -r /res/report"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "fs-extra": "^11.2.0",
+        "minimist": "^1.2.8"
+    }
 }
